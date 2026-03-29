@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Madane - Aspiring Software Engineer</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script>
+        // Set current year for footer
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Sakshi<span>Madane</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Circle Photo -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span class="highlight">Sakshi Madane</span></h1>
+                    <h2>Aspiring Software Engineer</h2>
+                    <div class="tags">
+                        <span class="tag">Python Developer</span>
+                        <span class="tag">AI/ML Enthusiast</span>
+                        <span class="tag">Problem Solver</span>
+                    </div>
+                    <p class="hero-description">
+                        Computer Engineering student passionate about building scalable solutions with Python, 
+                        exploring the frontiers of AI/ML, and mastering algorithms to solve complex real-world challenges.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2</h3>
+                            <p>Work Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2027</h3>
+                            <p>Graduating</p>
+                        </div>
+                        <div class="stat">
+                            <h3><i class="fas fa-check-circle"></i></h3>
+                            <p>Available for Work</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn">
+                            <i class="fas fa-code"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn secondary-btn">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Circle Photo Section -->
+                <div class="hero-image">
+                    <div class="circle-container">
+                        <div class="circle-photo">
+                            <img src="{% static 'assets/profile.jpg' %}" alt="Sakshi Madane" class="profile-photo">
+                        </div>
+                        <!-- Badge/Flag -->
+                        <div class="profile-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-title">Python Expert</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional info badges -->
+                        <div class="info-badge student-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BE Computer Engineering</span>
+                        </div>
+                        
+                        <div class="info-badge location-badge">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lonavala, MH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-description">
+                    Hi! I'm <strong>Sakshi Madane</strong>, a Computer Engineering student at 
+                    <strong>Sinhgad Institute of Technology, Lonavala</strong>, currently in my third year 
+                    and graduating in 2027. I'm passionate about Python development, AI/ML, and solving 
+                    complex problems using Data Structures and Algorithms.
+                </p>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Education</h4>
+                        <p>Computer Engineering Student</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4>Goal</h4>
+                        <p>Skilled Software Engineer</p>
+                    </div>
+                    <git class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Passion</h4>
+                        <p>AI/ML & Problem Solving</p>
+                    </git>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2027</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Engineering</h3>
+                        <h4>Computer Engineering</h4>
+                        <p class="institution">Sinhgad Institute of Technology, Lonavala</p>
+                        <p class="timeline-detail">Third Year • Expected Graduation 2027</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-list" id="experienceList">
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <h3>Developer</h3>
+                        <span class="exp-company">Graphura Private Limited</span>
+                        <span class="exp-location">Gurugram, Haryana</span>
+                    </div>
+                    <div class="exp-details">
+                        <span class="exp-duration">Current</span>
+                        <span class="exp-type">Full-time</span>
+                    </div>
+                    <p class="exp-description">
+                        Working on software solutions and enhancing development skills.
+                    </p>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <h3>Web Developer</h3>
+                        <span class="exp-company">YHills</span>
+                        <span class="exp-location">Remote</span>
+                    </div>
+                    <div class="exp-details">
+                        <span class="exp-duration">3 months</span>
+                        <span class="exp-type">Internship</span>
+                    </div>
+                    <p class="exp-description">
+                        Contributing to web development tasks and learning practical skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid" id="skillsGrid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fab fa-python"></i>
+                        <h3>Python Development</h3>
+                    </div>
+                    <p>Building backend systems, APIs, scalable applications, and automation tools</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Data Structures & Algorithms</h3>
+                    </div>
+                    <p>Problem-solving with efficient sorting, searching, graphs, and dynamic programming</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">DSA</span>
+                        <span class="skill-tag">Optimization</span>
+                        <span class="skill-tag">Complexity Analysis</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <p>Data preprocessing, model development, training, and evaluation</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Services I Offer</h2>
+            <p class="section-subtitle">Providing comprehensive development solutions with focus on quality and performance</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Building robust server-side functionalities with reliable and scalable architecture.</p>
+                    <ul class="service-list">
+                        <li>API Development</li>
+                        <li>Database Integration</li>
+                        <li>Server Architecture</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Development</h3>
+                    <p>Creating efficient applications and automation tools using Python ecosystem.</p>
+                    <ul class="service-list">
+                        <li>Django/Flask</li>
+                        <li>Automation Scripts</li>
+                        <li>Data Processing</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Design</h3>
+                    <p>Designing and implementing efficient database solutions for applications.</p>
+                    <ul class="service-list">
+                        <li>SQL/NoSQL</li>
+                        <li>Data Modeling</li>
+                        <li>Query Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Integration</h3>
+                    <p>Implementing machine learning models and AI-powered features.</p>
+                    <ul class="service-list">
+                        <li>Model Training</li>
+                        <li>Data Analysis</li>
+                        <li>ML Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing my work in Python development, AI/ML, and practical applications</p>
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>A lightweight weather application displaying real-time weather conditions using API integration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">API Integration</span>
+                            <span class="project-tag">Real-time Data</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/4010-sakshimadane/weather-app" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://weatherapp-demo.netlify.app" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Voice Assistant</h3>
+                        <p>A smart assistant capable of recognizing voice commands and performing various tasks efficiently.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Speech Recognition</span>
+                            <span class="project-tag">NLP</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/voice-assistant" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://voiceassistant-demo.netlify.app" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>AI Assistant for Developers</h3>
+                        <p>A productivity tool designed to help developers solve real-world challenges using AI assistance.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">AI/ML</span>
+                            <span class="project-tag">Developer Tools</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/ai-developer-assistant" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://aidevassistant-demo.netlify.app" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>sakshi.madane@example.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Lonavala, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/sakshimadane" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/sakshimadane" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/sakshimadane" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/sakshimadane" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-message">
+                    <h3><i class="fas fa-handshake"></i> Looking for collaboration?</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-row">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Sakshi Madane. All rights reserved.</p>
+            <p>Aspiring Software Engineer | Python Developer | AI/ML Enthusiast</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
