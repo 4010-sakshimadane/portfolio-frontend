@@ -1,1 +1,1 @@
-{"buildCommand": "echo 'Static site - no build needed'", "outputDirectory": ".", "framework": "html", "routes": [{"src": "/(.*)", "dest": "index.html"}]}
+{"buildCommand": "echo 'Static site'", "outputDirectory": "."}
